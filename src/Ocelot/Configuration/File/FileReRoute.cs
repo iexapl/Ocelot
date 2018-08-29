@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace Ocelot.Configuration.File
 {
@@ -24,6 +24,7 @@ namespace Ocelot.Configuration.File
             Priority = 1;
         }
 
+        public string Title { get; set; }
         public string DownstreamPathTemplate { get; set; }
         public string UpstreamPathTemplate { get; set; }
         public List<string> UpstreamHttpMethod { get; set; }
